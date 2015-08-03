@@ -5,7 +5,7 @@
   #tell the user what to do if necessary python dependencies are missing.
   limix_error = "limix is not in the python path. Please specify the limix path by calling the configLimix function after loading the package."
   package_error_base = c("It seems python package","is not installed. Try to install it using 'pip install")
-  package_error_end  = "If the package is installed already, make sure rPyhton is using the correct python version. If you have several versions of python installed, have a look at our installation guide on github."
+  package_error_end  = "If the package is installed already, make sure rPython is using the correct python version. If you have several versions of python installed, have a look at our installation guide on github."
   
   python_error_fun <- function(e){
     if(pmatch("No module named ",e[[1]])==1){
